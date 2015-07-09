@@ -2,6 +2,8 @@ package com.versatilemobitech.eaglemanpower;
 
 import java.util.ArrayList;
 
+import junit.framework.Test;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -47,11 +49,11 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		mTitle = mDrawerTitle = getTitle();
-		
-		 AdView mAdView = (AdView) findViewById(R.id.adView);
-			AdRequest adRequest = new AdRequest.Builder().build();
-			mAdView.loadAd(adRequest);
-			 
+
+		AdView mAdView = (AdView) findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+		mAdView.loadAd(adRequest);
+
 
 
 		// load slide menu items
@@ -79,10 +81,10 @@ public class MainActivity extends Activity {
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(0, -1)));
 		// What's hot, We  will add a counter here
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(0, -1)));
-		
+
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuIcons.getResourceId(0, -1)));
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuIcons.getResourceId(0, -1)));
-		
+
 
 		// Recycle the typed array
 		navMenuIcons.recycle();
@@ -104,7 +106,7 @@ public class MainActivity extends Activity {
 				R.drawable.ic_drawer, //nav menu toggle icon
 				R.string.app_name, // nav drawer open - description for accessibility
 				R.string.app_name // nav drawer close - description for accessibility
-		) {
+				) {
 			public void onDrawerClosed(View view) {
 				getActionBar().setTitle(mTitle);
 				// calling onPrepareOptionsMenu() to show action bar icons
@@ -129,7 +131,7 @@ public class MainActivity extends Activity {
 	 * Slide menu item click listener
 	 * */
 	private class SlideMenuClickListener implements
-			ListView.OnItemClickListener {
+	ListView.OnItemClickListener {
 		@Override
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
@@ -178,7 +180,7 @@ public class MainActivity extends Activity {
 	private void displayView(int position) {
 		// update the main content by replacing fragments
 		Fragment fragment = null;
-		 switch (position) {
+		switch (position) {
 		case 0:
 			fragment = new HomeClean();
 			break;
@@ -194,15 +196,15 @@ public class MainActivity extends Activity {
 		case 4:
 			fragment = new Offers();
 			break;
-			
+
 		case 5:
 			fragment = new BookOnline();
 			break;
-			
+
 		case 6:
 			fragment = new Interior();
 			break;
-		 
+
 		case 7:
 			fragment = new Contactus();
 			break;
@@ -210,14 +212,14 @@ public class MainActivity extends Activity {
 		default:
 			break;
 		}
- 
-		
-		 
-		
+
+
+
+
 		if (fragment != null) {
 			FragmentManager fragmentManager = getFragmentManager();
 			fragmentManager.beginTransaction()
-					.replace(R.id.frame_container, fragment).commit();
+			.replace(R.id.frame_container, fragment).commit();
 
 			// update selected item and title, then close the drawer
 			mDrawerList.setItemChecked(position, true);

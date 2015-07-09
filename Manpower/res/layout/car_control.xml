@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_margin="10dp"
-        android:alpha="0.7"
         android:background="@drawable/shadow_layer"
         android:orientation="vertical" >
 
@@ -38,7 +37,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="1dp"
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:background="@android:color/black" />
@@ -69,7 +68,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="1dp"
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:background="@android:color/black" />
@@ -100,7 +99,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="1dp"
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:background="@android:color/black" />
@@ -131,7 +130,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="1dp"
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:background="@android:color/black" />
@@ -186,7 +185,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="1dp"
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:background="@android:color/black" />
@@ -217,7 +216,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="1dp"
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:background="@android:color/black" />

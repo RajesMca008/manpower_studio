@@ -1,26 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     
-    android:layout_height="match_parent"  >
+    android:layout_height="match_parent" >
 
-     <com.google.android.gms.ads.AdView
+    
+    
+    <!-- Framelayout to display Fragments -->
+    <FrameLayout
+        
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="#848484" >
+         <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/publisher_id">
-    </com.google.android.gms.ads.AdView>
-    
-    <!-- Framelayout to display Fragments -->
-    <FrameLayout
-        android:id="@+id/frame_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" android:background="#F0F0F0" />
+        ads:adUnitId="@string/publisher_id"/>
+    </FrameLayout>
 
     <!-- Listview to display slider menu -->
     <ListView
