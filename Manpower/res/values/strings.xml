@@ -36,6 +36,7 @@
         <item>Book online</item>
         <item>Interior</item>
         <item>Contact us</item>
+        <item>About us</item>
         
     </string-array>
 
@@ -50,10 +51,10 @@
     <!-- DummyTG -->
     <string name="publisher_id">ca-app-pub-5674027387172985/8678911353</string>
     <string name="para1">We are best service provider in Hyderabad. We have begun to provide the highest quality of services like Cleaning services, A.M.C services,Pest control services,Car rentals, Plumbing services, Electrician services, Wallpaper and wooden flooring, blinds, Artificial grass and Carpets. maintenance services available in the industry.</string>
-    <string name="para2"> We understand our customers need and make it sure that need is fulfilled consistently. The expertise and professionalism of EAGLE MANPOWER SERVICES 
-         led to our business in first class reputation for our excellence services.</string>
+    <string name="para2"><![CDATA[ We understand our customers need and make it sure that need is fulfilled consistently. The expertise and professionalism of <b>EAGLE MANPOWER SERVICES </b>
+         led to our business in first class reputation for our excellence services.]]></string>
     <string name="para3"><![CDATA[ Life is becoming fast and tough. Here are lots of Responsibilities and priorities and at the same time there are so many things to consider. It\'s very hard to find time for the people and activities you love. So let it leaves to us to look after your home and help you to manage your unmanageable works.We are very punctual and honest to our work and always reach on time; we have not any transportation problem because company has its own transport for its employees]]></string>
-    <string name="para4"><![CDATA[ Our services are covering area in Hyderabad Kukatpally,Nizampet,Miyapur,Kondapur,Ligampally,Pragathinagar,Madhapurr.]]></string>
+    <string name="para4"><![CDATA[ Our services are covering area in Hyderabad :]]></string>
     <string name="address"><![CDATA[ Flat no 101 Sainilayam,venkateswara Nagar, </br>Near : vivekanadhanagr, kukatpally.500072.</br>Contact no : 9666311191. What\'s app No;</br>Email id: eaglemanpower.mallikarjuna@gmail.com ]]></string>
 
 </resources>

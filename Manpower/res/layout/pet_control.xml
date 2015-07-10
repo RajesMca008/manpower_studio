@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.2"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/cock_img"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.3"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/termite"
                 android:scaleType="fitXY" />
 
             <TextView

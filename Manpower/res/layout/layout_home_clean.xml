@@ -8,8 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/shadow_layer"
-
-        android:layout_centerInParent="true">
+android:layout_alignParentTop="true"
+        >
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_height="45dp">
 
             <ImageView
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/floor_cleaning"
                 android:layout_width="wrap_content" android:layout_weight="0.2"
                 android:scaleType="fitXY"
               
@@ -28,6 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_weight="0.8"
                 android:text="Floor Cleaning"
+                android:layout_marginLeft="5dp"
                  android:layout_gravity="center_vertical"
                 android:layout_height="wrap_content" />
 
@@ -43,7 +44,7 @@
             android:layout_height="45dp">
 
             <ImageView
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/toilet_clean"
                 android:layout_width="wrap_content" android:layout_weight="0.3"
                 android:scaleType="fitXY"
                 android:layout_gravity="center_vertical"
@@ -66,7 +67,7 @@
             android:layout_height="45dp">
 
             <ImageView
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/kitchen_clean"
                 android:layout_width="wrap_content" android:layout_weight="0.3"
                 android:scaleType="fitXY"
                 android:layout_gravity="center_vertical"
@@ -88,8 +89,8 @@
             android:layout_margin="5dp"
             android:layout_height="45dp">
 
-            <ImageView
-                android:background="@android:drawable/btn_star_big_on"
+           <ImageView
+                android:background="@drawable/glass_clean"
                 android:layout_width="wrap_content" android:layout_weight="0.3"
                 android:scaleType="fitXY"
                 android:layout_gravity="center_vertical"
@@ -112,7 +113,7 @@
             android:layout_height="45dp">
 
             <ImageView
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/dust_clean"
                 android:layout_width="wrap_content" android:layout_weight="0.3"
                 android:scaleType="fitXY"
                 android:layout_gravity="center_vertical"

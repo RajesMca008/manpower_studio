@@ -69,21 +69,20 @@ public class MainActivity extends Activity {
 		navDrawerItems = new ArrayList<NavDrawerItem>();
 
 		// adding nav drawer items to array
-		// Home
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
-		// Find People
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(0, -1)));
-		// Photos
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(0, -1)));
-		// Communities, Will add a counter here
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(0, -1)));
-		// Pages
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(0, -1)));
-		// What's hot, We  will add a counter here
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(0, -1)));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0],R.drawable.home_clean));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], R.drawable.amc_clean));
+		
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], R.drawable.pest_contorl));
+	 
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3],  R.drawable.car_rental));
+	 
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4],  R.drawable.offers));
+	 
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5],  R.drawable.book_offline));
 
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuIcons.getResourceId(0, -1)));
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuIcons.getResourceId(0, -1)));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6],  R.drawable.interior));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], R.drawable.contact_us));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], R.drawable.about_us));
 
 
 		// Recycle the typed array
@@ -207,6 +206,10 @@ public class MainActivity extends Activity {
 
 		case 7:
 			fragment = new Contactus();
+			break;
+			
+		case 8:
+			fragment = new AboutUsFragment();
 			break;
 
 		default:

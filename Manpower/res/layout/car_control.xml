@@ -19,19 +19,14 @@
             android:orientation="horizontal"
             android:weightSum="1" >
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="0.2"
-                android:background="@android:drawable/btn_star_big_on"
-                android:scaleType="fitXY" />
+           
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_weight="0.8"
+                android:layout_weight="1"
+                android:textStyle="bold"
                 android:text="We are providing Outstation for cars." />
         </LinearLayout>
 
@@ -54,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.3"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/tata_indica"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -85,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.3"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/tata_vista"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -116,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.3"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/inova"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -147,7 +142,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.3"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/tavera_car"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -171,7 +166,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.3"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/xuv_car"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -202,7 +197,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.3"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/bmw_car"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -233,7 +228,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.3"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/adi_car"
                 android:scaleType="fitXY" />
 
             <TextView

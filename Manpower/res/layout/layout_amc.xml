@@ -8,17 +8,17 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/shadow_layer"
-
-        android:layout_centerInParent="true">
+ android:layout_alignParentTop="true"
+         >
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:weightSum="1"
             android:layout_margin="5dp"
-            android:layout_height="45dp">
+            android:layout_height="75dp">
 
             <ImageView
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/toilet_clean"
                 android:layout_width="wrap_content" android:layout_weight="0.2"
                 android:scaleType="fitXY"
               
@@ -28,6 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_weight="0.8"
                 android:text="Toilet Cleaning"
+                android:layout_marginLeft="5dp"
                  android:layout_gravity="center_vertical"
                 android:layout_height="wrap_content" />
 
@@ -40,10 +41,10 @@
             android:layout_width="match_parent"
             android:weightSum="1"
             android:layout_margin="5dp"
-            android:layout_height="45dp">
+            android:layout_height="75dp">
 
             <ImageView
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/amc_clean"
                 android:layout_width="wrap_content" android:layout_weight="0.3"
                 android:scaleType="fitXY"
                 android:layout_gravity="center_vertical"
@@ -63,10 +64,10 @@
             android:layout_width="match_parent"
             android:weightSum="1"
             android:layout_margin="5dp"
-            android:layout_height="45dp">
+            android:layout_height="75dp">
 
             <ImageView
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/super_clean"
                 android:layout_width="wrap_content" android:layout_weight="0.3"
                 android:scaleType="fitXY"
                 android:layout_gravity="center_vertical"
@@ -85,15 +86,16 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:weightSum="1"
+            android:layout_marginBottom="5dp"
             android:layout_margin="5dp"
-            android:layout_height="45dp">
+            android:layout_height="75dp">
 
             <ImageView
-                android:background="@android:drawable/btn_star_big_on"
-                android:layout_width="wrap_content" android:layout_weight="0.3"
-                android:scaleType="fitXY"
+                android:background="@drawable/ic_launcher"
+                android:layout_width="75dp" android:layout_weight="0.3"
+                 android:layout_marginBottom="3dp"
                 android:layout_gravity="center_vertical"
-                android:layout_height="wrap_content" />
+                android:layout_height="75dp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_weight="0.7"

@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.2"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@drawable/offers"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -36,7 +36,8 @@
                 android:layout_weight="0.8"
                 android:padding="5dp"
                 android:minLines="5"
-                android:text="If you tacking A.M.C Services Pest control 50% Discount, Plumbing, Electrician 50%Discount on services Charges. And more Discount on A.M.C Services." />
+                android:textSize="20sp"
+                android:text="If you tacking A.M.C Services Pest control 50% Discount, Plumbing, Electrician 50%Discount on services Charges.\n And more Discount on A.M.C Services." />
         </LinearLayout>
 
          
