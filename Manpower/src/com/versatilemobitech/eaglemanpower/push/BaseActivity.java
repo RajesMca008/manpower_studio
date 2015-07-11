@@ -150,8 +150,6 @@ public class BaseActivity extends Activity{
 			 * */
 			
 			// Showing received message
-			//lblMessage.append(newMessage + "\n");			
-			Toast.makeText(getApplicationContext(), "New Message: " + newMessage, Toast.LENGTH_LONG).show();
 			
 			// Releasing wake lock
 			WakeLocker.release();
