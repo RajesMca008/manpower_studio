@@ -42,17 +42,20 @@ public class MainActivity extends Activity {
 
 	private ArrayList<NavDrawerItem> navDrawerItems;
 	private NavDrawerListAdapter adapter;
+	private int initi_tab=0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		if(getIntent()!=null)
+			initi_tab=getIntent().getIntExtra("TAB", 0);
 		mTitle = mDrawerTitle = getTitle();
 
-		AdView mAdView = (AdView) findViewById(R.id.adView);
+		/*AdView mAdView = (AdView) findViewById(R.id.adView);
 		AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
-		mAdView.loadAd(adRequest);
+		mAdView.loadAd(adRequest);*/
 
 
 
@@ -71,16 +74,16 @@ public class MainActivity extends Activity {
 		// adding nav drawer items to array
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0],R.drawable.home_clean));
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], R.drawable.amc_clean));
-		
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], R.drawable.pest_contorl));
-	 
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3],  R.drawable.car_rental));
-	 
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4],  R.drawable.offers));
-	 
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5],  R.drawable.book_offline));
 
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6],  R.drawable.interior));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], R.drawable.pest_contorl));
+
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3],  R.drawable.car_rental));
+
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4],  R.drawable.interior));
+
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5],  R.drawable.offers));
+
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6],  R.drawable.book_offline)); 
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], R.drawable.contact_us));
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], R.drawable.about_us));
 
@@ -122,7 +125,7 @@ public class MainActivity extends Activity {
 
 		if (savedInstanceState == null) {
 			// on first time display view for first nav item
-			displayView(0);
+			displayView(initi_tab);
 		}
 	}
 
@@ -207,7 +210,7 @@ public class MainActivity extends Activity {
 		case 7:
 			fragment = new Contactus();
 			break;
-			
+
 		case 8:
 			fragment = new AboutUsFragment();
 			break;
