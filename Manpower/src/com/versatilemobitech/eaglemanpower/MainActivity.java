@@ -195,9 +195,12 @@ public class MainActivity extends Activity {
 		case 3:
 			fragment = new CarControl();
 			break;
+			
+			 
+	        
 		case 4:
 			fragment = new Offers();
-			break;
+			break;                                  
 
 		case 5:
 			fragment = new BookOnline();

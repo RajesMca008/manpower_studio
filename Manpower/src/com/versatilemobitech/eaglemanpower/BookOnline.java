@@ -1,11 +1,14 @@
 package com.versatilemobitech.eaglemanpower;
 
 import android.app.Fragment;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.webkit.WebView.FindListener;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class BookOnline extends Fragment {
@@ -19,15 +22,42 @@ public class BookOnline extends Fragment {
  
         View rootView = inflater.inflate(R.layout.book_online, container, false);
         
-        EditText fullname=(EditText)rootView.findViewById(R.id.full_name);
+        final EditText fullname=(EditText)rootView.findViewById(R.id.full_name);
         
-        EditText email=(EditText)rootView.findViewById(R.id.email);
-        EditText contact=(EditText)rootView.findViewById(R.id.phone);
+        final EditText email=(EditText)rootView.findViewById(R.id.email);
+        final EditText contact=(EditText)rootView.findViewById(R.id.phone);
         
-        EditText helptopic=(EditText)rootView.findViewById(R.id.help_topic);
+        final EditText helptopic=(EditText)rootView.findViewById(R.id.help_topic);
+        Button submit=(Button)rootView.findViewById(R.id.submit_id);
         
+        submit.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+
+				if(fullname.getText().toString().length()>0 && email.getText().toString().length()>0 && contact.getText().toString().length()>9&& helptopic.getText().toString().length()>0)
+				{
+				sendEmail(fullname,email,contact,helptopic);
+				}
+				else{
+					if(fullname.getText().toString().length()<=0)
+						fullname.setError("Invalid");
+					
+					if(email.getText().toString().length()<=0)
+						email.setError("Invalid");
+					
+					
+					if(contact.getText().toString().length()<9)
+						contact.setError("Invalid");
+					
+					
+					if(helptopic.getText().toString().length()<=0)
+						helptopic.setError("Invalid");
+				}
+			}
+		});
          
-        sendEmail(fullname,email,contact,helptopic);
+        
          
         return rootView;
     }
@@ -35,7 +65,15 @@ public class BookOnline extends Fragment {
 
 	private void sendEmail(EditText fullname, EditText email, EditText contact,
 			EditText helptopic) {
-		// TODO Auto-generated method stub
+		 
+		Intent gmail = new Intent(Intent.ACTION_VIEW);
+        gmail.setClassName("com.google.android.gm","com.google.android.gm.ComposeActivityGmail");
+        gmail.putExtra(Intent.EXTRA_EMAIL, new String[] { "eaglemanpower.mallikarjuna@gmail.com" });
+       // gmail.setData(Uri.parse("jckdsilva@gmail.com"));
+        gmail.putExtra(Intent.EXTRA_SUBJECT, "Eagle Manpower service");
+        gmail.setType("plain/text");
+        gmail.putExtra(Intent.EXTRA_TEXT, "Name :"+fullname.getText().toString()+". \n"+"Contact :"+contact.getText().toString()+". \n"+"Help topic :"+helptopic.getText().toString()+".");
+        startActivity(gmail);
 		
 	}
 }

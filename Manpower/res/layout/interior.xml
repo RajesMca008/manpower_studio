@@ -22,8 +22,8 @@
             android:weightSum="1" >
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.2"
                 android:background="@drawable/interiod_desing"
@@ -34,9 +34,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.8"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:padding="5dp"
-                android:text="Wallpaper and wooden flooring, vinyl flooring,\n blinds, artificial grass and Carpets." />
+                android:text="Wallpaper and wooden flooring \n Vinyl flooring,blinds\n Artificial grass and Carpets." />
         </LinearLayout>
 
          
