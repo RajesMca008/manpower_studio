@@ -38,6 +38,16 @@
         <item>About us</item>
     </string-array>
 
+     <string-array name="services_items">
+        <item>Home cleaning</item>
+        <item>A.M.C</item>
+        <item>Pest control</item>
+        <item>Car rentals</item>
+        <!-- <item>Offers</item> -->
+        <item>Interior</item>
+         
+    </string-array>
+    
     <!-- Nav Drawer List Item Icons -->
     <!-- Keep them in order as the titles are in -->
     <array name="nav_drawer_icons">
@@ -55,6 +65,6 @@
     </string>
     <string name="para3"><![CDATA[ Life is becoming fast and tough. Here are lots of Responsibilities and priorities and at the same time there are so many things to consider. It\'s very hard to find time for the people and activities you love. So let it leaves to us to look after your home and help you to manage your unmanageable works.We are very punctual and honest to our work and always reach on time; we have not any transportation problem because company has its own transport for its employees]]></string>
     <string name="para4"><![CDATA[ Our services are covering area in Hyderabad :]]></string>
-    <string name="address"><![CDATA[ Flat no 101 Sainilayam,venkateswara Nagar, </br>Near : vivekanadhanagr, kukatpally.500072.</br>Contact no : 9666311191.</br> Skpe :eaglemanpowerservices;</br>Email id: eaglemanpower.mallikarjuna@gmail.com ]]></string>
+    <string name="address"><![CDATA[Flat:101 Sainilayam,<br/>Venkateswara Nagar,<br/>Near: vivekanadhanagr,<br/>kukatpally-500072.<br/><br/>Contact no: 9666311191.<br/> <br/>Skpe:<br/><i>eaglemanpowerservices,</i><br/><br/>Email id:<br/><i>eaglemanpower.mallikarjuna@gmail.com</i> ]]></string>
 
 </resources>
