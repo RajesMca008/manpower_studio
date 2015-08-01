@@ -155,14 +155,15 @@ public class MainActivity extends Activity {
 			return true;
 		}
 		// Handle action bar actions click
-		switch (item.getItemId()) {
+		/*switch (item.getItemId()) {
 		case R.id.action_settings:
 			Intent intent=new Intent(MainActivity.this,AboutUs.class);
 			startActivity(intent);
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
-		}
+		}*/
+		return super.onOptionsItemSelected(item);
 	}
 
 	/* *
@@ -172,7 +173,7 @@ public class MainActivity extends Activity {
 	public boolean onPrepareOptionsMenu(Menu menu) {
 		// if nav drawer is opened, hide the action items
 		boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
-		menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
+		//menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
 		return super.onPrepareOptionsMenu(menu);
 	}
 

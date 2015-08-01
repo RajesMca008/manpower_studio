@@ -179,7 +179,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginTop="5dp"
-                android:text="Madhapurr" />
+                android:text="Madhapur" />
         </LinearLayout>
         
     </LinearLayout>
