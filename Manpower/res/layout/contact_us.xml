@@ -34,7 +34,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.8"
                 android:padding="1dp"
-                android:textSize="15sp"
+                android:text="@string/address"
+                android:textSize="17sp"
                  />
         </LinearLayout>
 

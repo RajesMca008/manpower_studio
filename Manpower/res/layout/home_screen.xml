@@ -105,7 +105,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="0.5"
                 android:gravity="center"
-                android:text="Book offline"
+                android:text="Book online"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 

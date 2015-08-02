@@ -2,15 +2,9 @@ package com.versatilemobitech.eaglemanpower;
 
 import java.util.ArrayList;
 
-import junit.framework.Test;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.graphics.Color;
@@ -79,11 +73,11 @@ public class MainActivity extends Activity {
 
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3],  R.drawable.car_rental));
 
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4],  R.drawable.interior));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4],  R.drawable.offers));
 
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5],  R.drawable.offers));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5],  R.drawable.book_offline));
 
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6],  R.drawable.book_offline)); 
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6],  R.drawable.interior)); 
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], R.drawable.contact_us));
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], R.drawable.about_us));
 

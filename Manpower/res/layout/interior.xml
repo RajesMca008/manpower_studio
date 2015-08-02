@@ -26,7 +26,7 @@
                 android:layout_height="70dp"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.2"
-                android:background="@drawable/interiod_desing"
+                android:background="@drawable/interior"
                 android:scaleType="fitXY" />
 
             <TextView
